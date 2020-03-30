@@ -2,13 +2,15 @@ version: '3'
 services:
   web:
     build: .
-    command:
-      - "node"
+    entrypoint:
+      - "/usr/src/app/node_modules/.bin/nodemon"
       - "/usr/src/app/server.js"
     ports:
       - "8080:8080"
     depends_on:
       - mongo
+    volumes:
+      - "app:/usr/src/app/app"
   mongo:
     image: "mongo"
     ports:
