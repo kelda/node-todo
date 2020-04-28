@@ -36,8 +36,8 @@ blimp up
 This will boot the `node` and `mongo` containers. Once they're up, access the
 todo UI at [http://localhost:8080](http://localhost:8080), and a couple todo tasks.
 
-If you have `docker` installed locally, and want to try the image building
-feature, run `blimp up -f ./docker-compose-local-build.yml` instead.
+If you don't have `docker` installed locally, and want to disable the image
+building feature, run `blimp up -f ./docker-compose-no-build.yml` instead.
 
 ## 5. Make a code change
 
