@@ -1,13 +1,18 @@
 version: '3'
 services:
   web:
-    build: .
+    image: "node:10"
+    entrypoint:
+      - "sh"
+      - "-c"
+      - "npm install && ./node_modules/.bin/nodemon server.js"
+    working_dir: "/usr/src/app"
     ports:
       - "8080:8080"
     depends_on:
       - mongo
     volumes:
-      - "./app:/usr/src/app/app"
+      - ".:/usr/src/app"
   mongo:
     image: "mongo"
     ports:
