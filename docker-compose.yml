@@ -13,6 +13,8 @@ services:
       - mongo
     volumes:
       - ".:/usr/src/app"
+      # Don't sync the node_modules directory back to the client.
+      - "/usr/src/app/node_modules"
   mongo:
     image: "mongo"
     ports:
