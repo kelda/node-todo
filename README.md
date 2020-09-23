@@ -1,6 +1,6 @@
 # Node-todo
 
-[![Blimp demo badge](https://kelda.io/demo-badge.svg?repo=https://github.com/kelda/node-todo.git)](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&service=web&port=8080)
+[![Blimp demo badge](https://kelda.io/demo-badge.svg?repo=https://github.com/kelda/node-todo.git)](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&port=web:8080)
 
 This repo contains an example `node` application that stores data in
 `mongo`. Shout out to the original author,
@@ -69,10 +69,10 @@ blimp ssh web
 ## Demo environment
 
 [Boot a personal demo copy of
-node-todo](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&service=web&port=8080)
+node-todo](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&port=web:8080)
 from your browser without downloading or setting up anything.
 
 Clicking the
-[link](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&service=web&port=8080)
+[link](https://kelda.io/preview-env/?repo=https://github.com/kelda/node-todo.git&port=web:8080)
 boots this repo in the Blimp cloud, and creates a public URL for you to access
 it.
